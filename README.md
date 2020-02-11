@@ -1,4 +1,5 @@
 # Blockchain SDK
+[![Build Status](https://travis-ci.com/jbdtky/blockchain_sdk.svg?branch=master)](https://travis-ci.com/jbdtky/blockchain_sdk)
 
 <pre>
   Summary: A dart package used for blockchain related project
