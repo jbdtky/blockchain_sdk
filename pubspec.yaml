@@ -1,8 +1,7 @@
 name: blockchain_sdk
 description: A dart package used for blockchain related project
 version: 0.0.1
-author:
-homepage:
+homepage: https://www.linkedin.com/in/jean-baptiste-dominguez-45216361/
 
 environment:
   sdk: ">=2.6.0 <3.0.0"
