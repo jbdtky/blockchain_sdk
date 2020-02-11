@@ -3,7 +3,6 @@
 <pre>
   Summary: A dart package used for blockchain related project
   Author: Jean-Baptiste Dominguez (twitter/github: @jbdtky)
-  Created: 2020-02-11
 </pre>
 
 ## BIP39
