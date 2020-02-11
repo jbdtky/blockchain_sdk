@@ -1,7 +1,19 @@
+# Reference : https://robertohuertas.com/2019/01/20/publish-flutter-package-with-travis/
 language: dart
 dart:
   - stable
-
+os:
+  - linux
+install:
+  - echo 'Avoid default Travis CI install step' # this is to avoid an error with pub in Travis
+before_script:
+  - cd ..
+  - git clone https://github.com/flutter/flutter.git
+  - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+  - flutter doctor
 script:
-  - flutter pub get
+  - cd $TRAVIS_BUILD_DIR
+  - flutter packages get
+  - flutter analyze --no-pub --no-current-package lib
   - flutter test
+  - flutter packages pub publish --dry-run
