@@ -1,5 +1,7 @@
 language: dart
 dart:
   - stable
-dart_task:
-  - test
+
+script:
+  - flutter pub get
+  - flutter test
