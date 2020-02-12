@@ -1,13 +1,14 @@
 name: blockchain_sdk
-description: A dart package used for blockchain related project
-version: 0.0.1
-homepage: https://www.linkedin.com/in/jean-baptiste-dominguez-45216361/
+description: A dart package used for blockchain related project. It provides the biggest standards in Blockchain that you may need in your project.
+version: 0.0.2
+homepage: https://www.linkedin.com/in/jean-baptiste-dominguez-45216361
 
 environment:
   sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
   crypto: ^2.1.3
+  convert: ^2.1.1
 
 dev_dependencies:
   flutter_test:
