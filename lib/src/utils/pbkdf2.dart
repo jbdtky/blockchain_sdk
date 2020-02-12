@@ -35,12 +35,12 @@ class PBKDF2 {
   /// Calculate 0 to iteration for a block
   Uint8List _f(int i) {
     // F(Password, Salt, c, i) = U1 ^ U2 ^ ... ^ Uc
-    var key = utf8.encode(password);
+    var key = ascii.encode(password);
     final hmac = Hmac(hash, key); // Setup hmac with the key
 
     // Calculate the first block
     // U1 = PRF(Password, Salt || INT_32_BE(1))
-    var message = utf8.encode(salt) +
+    var message = ascii.encode(salt) +
         i
             .toRadixString(8)
             .padLeft(4, '0')

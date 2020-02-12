@@ -1,5 +1,7 @@
 import 'dart:typed_data';
 
+import 'package:crypto/crypto.dart';
+
 extension Uint8ListExtensions on Uint8List {
   String toBinary() {
     return this
@@ -21,5 +23,9 @@ extension Uint8ListExtensions on Uint8List {
       c[i] = this.elementAt(i) ^ b.elementAt(i);
     }
     return c;
+  }
+
+  Uint8List hash256() {
+    return sha256.convert(sha256.convert(this).bytes).bytes;
   }
 }
