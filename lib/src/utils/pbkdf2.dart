@@ -32,10 +32,6 @@ class PBKDF2 {
     return Uint8List.fromList(t.sublist(0, length));
   }
 
-  // 0000 0000
-  // 1 octet = 8 bits
-  // 1 hex = 2 octets
-
   /// Calculate 0 to iteration for a block
   Uint8List _f(int i) {
     // F(Password, Salt, c, i) = U1 ^ U2 ^ ... ^ Uc
