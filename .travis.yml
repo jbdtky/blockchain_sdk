@@ -15,7 +15,7 @@ script:
   - cd $TRAVIS_BUILD_DIR
   - flutter packages get
   - flutter analyze --no-pub --no-current-package lib
-  - flutter test test --coverage
+  - flutter test --coverage test
   - flutter packages pub publish --dry-run
 after_script:
   - bash <(curl -s https://codecov.io/bash)
