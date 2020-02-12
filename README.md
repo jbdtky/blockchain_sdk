@@ -1,7 +1,7 @@
 # Blockchain SDK
 [![Build Status](https://travis-ci.com/jbdtky/blockchain_sdk.svg?branch=master)](https://travis-ci.com/jbdtky/blockchain_sdk)
 [![codecov](https://codecov.io/gh/jbdtky/blockchain_sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/jbdtky/blockchain_sdk)
-![version](https://img.shields.io/badge/version-0.0.2-black.svg) 
+![version](https://img.shields.io/badge/version-0.1.0-black.svg) 
 ![compatibility](https://img.shields.io/badge/dart_sdk-+2.6.0-orange.svg) 
 ![license](https://img.shields.io/badge/license-Apache_2.0-lightgrey.svg) 
 
